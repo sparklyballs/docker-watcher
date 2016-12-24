@@ -4,4 +4,6 @@ umask 022
 
 exec \
 	s6-setuidgid abc python /app/watcher/watcher.py \
-	--conf /config/config.cfg
+	--conf /config/config.cfg \
+	--address 0.0.0.0 \
+	--port 9090 \
