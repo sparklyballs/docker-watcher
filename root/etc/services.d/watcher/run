@@ -4,4 +4,4 @@ umask 022
 
 exec \
 	s6-setuidgid abc python /app/watcher/watcher.py \
-	--config_file=/config/config.cfg
+	--conf /config/config.cfg
