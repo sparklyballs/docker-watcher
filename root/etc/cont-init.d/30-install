@@ -2,15 +2,15 @@
 
 # create folders
 mkdir -p \
-	/var/log/watcher
+	/config/log
 
 # install app
-[[ ! -d "/app/watcher/.git" ]] && \
+[[ ! -d /app/watcher/.git ]] && \
 	git clone https://github.com/nosmokingbandit/watcher /app/watcher
 
 # permissions
 chown -R abc:abc \
-	/app
+	/app \
+	/config
 
-chmod 777 \
-	/var/log/watcher
+

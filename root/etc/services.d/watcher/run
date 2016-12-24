@@ -1,9 +1,8 @@
 #!/usr/bin/with-contenv bash
 
-umask 022
-
 exec \
 	s6-setuidgid abc python /app/watcher/watcher.py \
 	--conf /config/config.cfg \
 	--address 0.0.0.0 \
+	--log /config/log \
 	--port 9090 \
