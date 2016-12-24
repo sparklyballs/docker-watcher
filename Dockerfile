@@ -8,6 +8,6 @@ ENV PYTHONIOENCODING="UTF-8"
 COPY root/ /
 
 # ports and volumes
-EXPOSE 5050
+EXPOSE 9090
 WORKDIR /app/watcher
 VOLUME /config /downloads /movies
